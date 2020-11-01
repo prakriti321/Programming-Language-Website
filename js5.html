@@ -1,0 +1,380 @@
+<html>
+<head>
+
+
+</head>
+
+<style>
+
+a:link{text-decoration:none;
+color:#ffffff}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+
+#aside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+a.#ffffff:link {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:active {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:visited {
+text-decoration:none;
+color:#ffffff;
+}
+
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#bg {
+width:21%;
+height:1px;
+float:left}
+
+#container {
+width:70%;
+height:7%;
+float:left;
+}
+
+#container ul{
+list-style:none;
+font-family:Georgia;
+}
+
+#container ul li{
+background-color:3c3E94;
+width:165px;
+border:1px solid white;
+height:40px;
+line-height:45px;
+text-align:center;
+float:left;
+color:white;
+font-size:16px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:#388222;
+}
+
+#container ul ul{
+display:none;
+}
+
+
+#container ul li:hover > ul{
+display:block;
+}
+
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+}
+
+#topic {
+width:100%;
+background-color:3c3E94;
+height:45px;
+text-align:center;
+float:left;
+color:#ffffff;
+font-family:Lucida Calligraphy;
+}
+/*
+#left {
+float:left;
+width:100%;
+height:100%;
+background-color:pink;
+}
+
+#right {
+width:100%;
+height:100%;
+background-color:pink;
+float:left;
+}
+
+#center {
+float:left;
+border:2px dotted #3c3E94;
+width:50%;
+height:100%;
+font-size:20px
+}
+
+#aside {
+background-color:#3c3E94;
+}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+#beside {
+background-color:#3c3E94;
+width:70%;
+float:left
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+*/
+</style>
+<body bgcolor=pink>
+<div style="width:100%;height:8%">
+<h1 align=center style="background-color:#3c3E94;font-size:55;font-family:Colonna MT;word-spacing:6;color:pink">All About Computer Languages</h1><br>
+</div>
+<div id="bg">
+</div>
+<div id="container">
+<ul>
+<li><a href="homepage.html" style="color:#ffffff">Home</a></li>
+<li>Web Designing
+	<ul>
+	<li><a href="htt.html" style="color:#ffffff">HTML</a></li>
+	<li><a href="csswb.html" style="color:#ffffff">CSS</a></li>
+	</ul>
+</li>
+<li>Programming
+	<ul>
+	<li><a href="c.html" style="color:#ffffff">C Language</a></li>
+	<li><a href="cpp.html" style="color:#ffffff">C++ Language</a></li>
+	</ul>
+</li>
+<li>Clientside Scripting
+	<ul>
+	<li><a href="js.html" style="color:#ffffff">Javascript</a></li>
+	</ul>
+</li>
+<li>Serverside Scripting
+	<ul>
+	<li><a href="php.html" style="color:#ffffff">PHP</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+<div id="bg">
+</div>
+<div id="topic">
+<h1>Event Handlers</h1>
+</div>
+
+
+<table border=1 cellpadding=0 cellspacing=0>
+
+<tr>
+<td style="width:20%;background-color:pink;height:10%">
+<img src="pictures/js.jpg" height=50% width=100%>
+<br><br><br>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Study Topics</b></p><br>
+
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="aside" align=center style="background-color:#3c3E94;">
+ <br><a href="js1.html" style="color:#ffffff">Math Object</a>
+<br><br>
+ <a href="js2.html" style="color:#ffffff">String Object</a>
+<br><br>
+ <a href="js3.html" style="color:#ffffff">Date Object</a>
+<br><br>
+ <a href="js4.html" style="color:#ffffff">Array Object</a>
+<br><br>
+ <a href="js5.html" style="color:#ffffff">Event Handlers</a>
+<br><br>
+ <a href="js6.html" style="color:#ffffff">Conditional Statements</a>
+<br><br>
+</div>
+</td>
+
+
+<td style="width:60%;border:4px dotted #3c3E94;background-color:#ffffff" rowspan=2>
+
+<div id="center">
+<p>JavaScript's interaction with HTML is handled through events that occur when 
+the user or the browser manipulates a page.When the page loads, it is called an event. 
+When the user clicks a button, that click too is an event. Other examples include events 
+like pressing any key, closing a window, resizing a window, etc.Developers can use these
+events to execute JavaScript coded responses, which cause buttons to close windows, 
+messages to be displayed to users, data to be validated, and virtually any other 
+type of response imaginable.
+Events are a part of the Document Object Model (DOM) Level 3 and every HTML 
+element contains a set of events which can trigger JavaScript Code.
+<br> 
+Here we will see a few examples to understand a relation between Event and JavaScript :<br><br>
+<h2><u>HTML 5 Standard Events</u></h2><br><br>
+
+The standard HTML 5 events are listed here for your reference.<br>
+Here script indicates a Javascript function to be executed against that event.<br>
+<pre><big>
+
+<u>Attribute</u>		<u>Value</u>		<u>Description</u>
+
+Offline			script		Triggers when the document goes offline
+
+Onabort			script		Triggers on an abort event
+
+onafterprint		script		Triggers after the document is printed
+
+onbeforeonload		script		Triggers before the document loads
+
+onbeforeprint		script		Triggers before the document is printed
+
+onblur			script		Triggers when the window loses focus
+
+oncanplay		script		Triggers when media can start play, but
+					might has to stop for buffering
+
+oncanplaythrough	script		Triggers when media can be played to the end,
+					without stopping for buffering
+
+onchange		script		Triggers when an element changes
+
+onclick			script		Triggers on a mouse click
+
+oncontextmenu		script		Triggers when a context menu is triggered
+
+ondblclick		script		Triggers on a mouse double-click
+
+ondrag			script		Triggers when an element is dragged
+
+ondragend		script		Triggers at the end of a drag operation
+
+
+onerror			script		Triggers when an error occur
+
+onfocus			script		Triggers when the window gets focus
+
+onformchange		script		Triggers when a form changes
+
+onforminput		script		Triggers when a form gets user input
+
+onhaschange		script		Triggers when the document has change
+
+oninput			script		Triggers when an element gets user input
+
+oninvalid		script		Triggers when an element is invalid
+
+onkeydown		script		Triggers when a key is pressed
+
+onkeypress		script		Triggers when a key is pressed and released
+
+onkeyup			script		Triggers when a key is released
+
+onload			script		Triggers when the document loads
+
+onloadeddata		script		Triggers when media data is loaded
+
+onloadedmetadata	script		Triggers when the duration and other media 
+					data of a media element is loaded
+
+onloadstart		script		Triggers when the browser starts to load
+					the media data
+
+onmessage		script		Triggers when the message is triggered
+
+onmousedown		script		Triggers when a mouse button is pressed
+
+onmousemove		script		Triggers when the mouse pointer moves
+
+onmouseout		script		Triggers when the mouse pointer moves out 
+					of an element
+
+onmouseover		script		Triggers when the mouse pointer moves over 
+					an element
+
+onmouseup		script		Triggers when a mouse button is released
+
+onmousewheel		script		Triggers when the mouse wheel is being rotated
+
+</big></pre>
+<br>
+<b>Example:</b><br>
+<br>
+Code:<br>
+<img src="New folder/js5cd.png" border=2 height=70% width=100%>
+<br><br>
+<img src="New folder/js5op.png" border=2 height=60% width=70%>
+</p>
+</div>
+
+</td>
+
+
+<td style="width:20%;background-color:pink"> 
+
+<div id="right" style="background-color:pink;height:100%">
+<br>
+<img src="pictures/TUml.gif" align=right height=50% width=100%>
+<div style="width:100%;height:36px;float:left"></div>
+<pre>
+
+
+</pre>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Courses</b></p><br>
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="beside" align=center style="background-color:#3c3E94;">
+	<br><a href="htt.html" style="color:#ffffff">HTML</a><br><br>
+	<a href="csswb.html" style="color:#ffffff">CSS</a><br><br>
+	<a href="c.html" style="color:#ffffff">C Language</a><br><br>
+	<a href="cpp.html" style="color:#ffffff">C++ Language</a><br><br>
+	<a href="js.html" style="color:#ffffff">Javascript</a><br><br>
+	<a href="php.html" style="color:#ffffff">PHP</a><br><br>
+
+</div>
+
+</div>
+<br>
+</td></tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tfoot style="background-color:#3c3E94;color:#ffffff">
+<td>Email :- prakritibhagwat@gmail.com <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		 akpk1804@gmail.com</td>
+<td style="border:3px dotted #ffffff"><marquee behavior="alternate" style="font-family:Viner Hand ITC"><big>Thank You!&nbsp;&nbsp;  Keep Learning...!</big></marquee></td>
+<td >Author :- Miss. Prakriti Naval Bhagwat</td>
+</tfoot>
+</table>
+
+</body></html>

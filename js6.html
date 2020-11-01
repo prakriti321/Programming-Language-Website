@@ -1,0 +1,347 @@
+<html>
+<head>
+
+
+</head>
+
+<style>
+
+a:link{text-decoration:none;
+color:#ffffff}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+
+#aside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+a.#ffffff:link {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:active {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:visited {
+text-decoration:none;
+color:#ffffff;
+}
+
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#bg {
+width:21%;
+height:1px;
+float:left}
+
+#container {
+width:70%;
+height:7%;
+float:left;
+}
+
+#container ul{
+list-style:none;
+font-family:Georgia;
+}
+
+#container ul li{
+background-color:3c3E94;
+width:165px;
+border:1px solid white;
+height:40px;
+line-height:45px;
+text-align:center;
+float:left;
+color:white;
+font-size:16px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:#388222;
+}
+
+#container ul ul{
+display:none;
+}
+
+
+#container ul li:hover > ul{
+display:block;
+}
+
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+}
+
+#topic {
+width:100%;
+background-color:3c3E94;
+height:45px;
+text-align:center;
+float:left;
+color:#ffffff;
+font-family:Lucida Calligraphy;
+}
+/*
+#left {
+float:left;
+width:100%;
+height:100%;
+background-color:pink;
+}
+
+#right {
+width:100%;
+height:100%;
+background-color:pink;
+float:left;
+}
+
+#center {
+float:left;
+border:2px dotted #3c3E94;
+width:59%;
+height:100%;
+font-size:20px
+}
+
+#aside {
+background-color:#3c3E94;
+}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+#beside {
+background-color:#3c3E94;
+width:60%;
+float:left
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+*/
+</style>
+<body bgcolor=pink>
+<div style="width:100%;height:8%">
+<h1 align=center style="background-color:#3c3E94;font-size:55;font-family:Colonna MT;word-spacing:6;color:pink">All About Computer Languages</h1><br>
+</div>
+<div id="bg">
+</div>
+<div id="container">
+<ul>
+<li><a href="homepage.html" style="color:#ffffff">Home</a></li>
+<li>Web Designing
+	<ul>
+	<li><a href="htt.html" style="color:#ffffff">HTML</a></li>
+	<li><a href="csswb.html" style="color:#ffffff">CSS</a></li>
+	</ul>
+</li>
+<li>Programming
+	<ul>
+	<li><a href="c.html" style="color:#ffffff">C Language</a></li>
+	<li><a href="cpp.html" style="color:#ffffff">C++ Language</a></li>
+	</ul>
+</li>
+<li>Clientside Scripting
+	<ul>
+	<li><a href="js.html" style="color:#ffffff">Javascript</a></li>
+	</ul>
+</li>
+<li>Serverside Scripting
+	<ul>
+	<li><a href="php.html" style="color:#ffffff">PHP</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+<div id="bg">
+</div>
+<div id="topic">
+<h1>Conditional Statements</h1>
+</div>
+
+
+<table border=1 cellpadding=0 cellspacing=0>
+
+<tr>
+<td style="width:20%;background-color:pink;height:10%">
+<img src="pictures/js.jpg" height=50% width=100%>
+<br><br><br>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Study Topics</b></p><br>
+
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="aside" align=center style="background-color:#3c3E94;">
+ <br><a href="js1.html" style="color:#ffffff">Math Object</a>
+<br><br>
+ <a href="js2.html" style="color:#ffffff">String Object</a>
+<br><br>
+ <a href="js3.html" style="color:#ffffff">Date Object</a>
+<br><br>
+ <a href="js4.html" style="color:#ffffff">Array Object</a>
+<br><br>
+ <a href="js5.html" style="color:#ffffff">Event Handlers</a>
+<br><br>
+ <a href="js6.html" style="color:#ffffff">Conditional Statements</a>
+<br><br>
+</div>
+</td>
+
+
+<td style="width:60%;border:4px dotted #3c3E94;background-color:#ffffff" rowspan=2>
+
+<div id="center">
+<p>While writing a program, there may be a situation when you need to adopt one out of a given set of paths. 
+In such cases, you need to use conditional statements that allow your program to make correct decisions 
+and perform right actions.
+JavaScript supports conditional statements which are used to perform different actions based on different conditions. 
+Here we will explain the if..else statement.
+<br>
+<h3>if statement</h3><br>
+<p>
+The if statement is the fundamental control statement that allows JavaScript to make decisions 
+and execute statements conditionally.</p><br>
+
+<b>Syntax :</b>
+<br>
+The syntax for a basic if statement is as follows :
+<br><br>
+if (expression) {
+   Statement(s) to be executed if expression is true
+}
+<br><br>
+Here a JavaScript expression is evaluated. If the resulting value is true, the given statement(s) are executed.
+ If the expression is false, 
+then no statement would be not executed. <br>
+Most of the times, you will use comparison operators while making decisions.
+<br><br>
+<h3>if...else statement</h3>
+
+The 'if...else' statement is the next form of control statement that allows JavaScript 
+to execute statements in a more controlled way.
+<br><br>
+Syntax
+if (expression) {
+   Statement(s) to be executed if expression is true
+} else {
+   Statement(s) to be executed if expression is false
+}
+<br><br>
+Here JavaScript expression is evaluated. If the resulting value is true, 
+the given statement(s) in the ‘if’ block, are executed. 
+If the expression is false, then the given statement(s) in the else block are executed.
+<br><br>
+<b>If Else Loop Example:</b>
+<br>
+Code:<br><br>
+<img src="New folder/js6cd.png" border=2 height=75% width=80%>
+<br><br>
+
+<img src="New folder/js6op1.png" border=2 height=70% width=70%><br>
+<img src="New folder/js6op2.png" border=2 height=65% width=70%>
+<br><br>
+<b>While Loop Example:</b>
+<br>
+Code:<br><br>
+<img src="New folder/js6cd3.png" border=2 height=80% width=80%>
+<br>
+<img src="New folder/js6op3.png" border=2 height=60% width=70%>
+<img src="New folder/js6op33.png" border=2 height=70% width=70%>
+<br><br>
+
+<b>For Loop Example:</b>
+<br><br>
+Code:<br>
+<img src="New folder/js6cd1.png" border=2 height=90% width=80%>
+<br><br>
+<img src="New folder/js6op11.png" border=2 height=70% width=70%><br>
+<img src="New folder/js6op12.png" border=2 height=90% width=70%>
+<br><br>
+<b>Switch Case Loop Example:</b>
+<br><br>
+Code:<br>
+<img src="New folder/js6cd2.png" border=2 height=90% width=100%>
+<br><br>
+<img src="New folder/js6op22.png" border=2 height=55% width=70%>
+<img src="New folder/js6op23.png" border=2 height=50% width=70%>
+</div>
+
+</td>
+
+<td style="width:20%;background-color:pink"> 
+
+<div id="right" style="background-color:pink;height:100%">
+<br>
+<img src="pictures/TUml.gif" align=right height=50% width=100%>
+<div style="width:100%;height:36px;float:left"></div>
+<pre>
+
+
+</pre>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Courses</b></p><br>
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="beside" align=center style="background-color:#3c3E94;">
+	<br><a href="htt.html" style="color:#ffffff">HTML</a><br><br>
+	<a href="csswb.html" style="color:#ffffff">CSS</a><br><br>
+	<a href="c.html" style="color:#ffffff">C Language</a><br><br>
+	<a href="cpp.html" style="color:#ffffff">C++ Language</a><br><br>
+	<a href="js.html" style="color:#ffffff">Javascript</a><br><br>
+	<a href="php.html" style="color:#ffffff">PHP</a><br><br>
+
+</div>
+
+</div>
+<br>
+</td></tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tfoot style="background-color:#3c3E94;color:#ffffff">
+<td>Email :- prakritibhagwat@gmail.com <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		 akpk1804@gmail.com</td>
+<td style="border:3px dotted #ffffff"><marquee behavior="alternate" style="font-family:Viner Hand ITC"><big>Thank You!&nbsp;&nbsp;  Keep Learning...!</big></marquee></td>
+<td >Author :- Miss. Prakriti Naval Bhagwat</td>
+</tfoot>
+</table>
+
+</body></html>

@@ -1,0 +1,309 @@
+<html>
+<head>
+</head>
+
+<style>
+
+a:link{text-decoration:none;
+color:#ffffff}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+
+#aside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+a.#ffffff:link {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:active {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:visited {
+text-decoration:none;
+color:#ffffff;
+}
+
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#bg {
+width:21%;
+height:1px;
+float:left}
+
+#container {
+width:70%;
+height:7%;
+float:left;
+}
+
+#container ul{
+list-style:none;
+font-family:Georgia;
+}
+
+#container ul li{
+background-color:3c3E94;
+width:165px;
+border:1px solid white;
+height:40px;
+line-height:45px;
+text-align:center;
+float:left;
+color:white;
+font-size:16px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:#388222;
+}
+
+#container ul ul{
+display:none;
+}
+
+
+#container ul li:hover > ul{
+display:block;
+}
+
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+}
+
+p:  {
+}
+
+#topic {
+width:100%;
+background-color:3c3E94;
+height:45px;
+text-align:center;
+float:left;
+color:#ffffff;
+font-family:Lucida Calligraphy;
+}
+
+</style>
+<body bgcolor=pink>
+<div style="width:100%;height:8%">
+<h1 align=center style="background-color:#3c3E94;font-size:55;font-family:Colonna MT;word-spacing:6;color:pink">All About Computer Languages</h1><br>
+</div>
+<div id="bg">
+</div>
+<div id="container">
+<ul>
+<li><a href="homepage.html" style="color:#ffffff">Home</a></li>
+<li>Web Designing
+	<ul>
+	<li><a href="htt.html" style="color:#ffffff">HTML</a></li>
+	<li><a href="csswb.html" style="color:#ffffff">CSS</a></li>
+	</ul>
+</li>
+<li>Programming
+	<ul>
+	<li><a href="c.html" style="color:#ffffff">C Language</a></li>
+	<li><a href="cpp.html" style="color:#ffffff">C++ Language</a></li>
+	</ul>
+</li>
+<li>Clientside Scripting
+	<ul>
+	<li><a href="js.html" style="color:#ffffff">Javascript</a></li>
+	</ul>
+</li>
+<li>Serverside Scripting
+	<ul>
+	<li><a href="php.html" style="color:#ffffff">PHP</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+<div id="bg">
+</div>
+<div id="topic">
+<h1>Storage Classes</h1>
+</div>
+
+
+<table border=1 cellpadding=0 cellspacing=0>
+
+<tr>
+<td style="width:20%;background-color:pink;height:20%"><br>
+<img src="pictures/c.jpg" height=55% width=100%>
+<br><br><br>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Study Topics</b></p><br>
+
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="aside" align=center style="background-color:#3c3E94;">
+ <br><a href="c1.html" style="color:#ffffff">Program Structure</a>
+<br><br>
+ <a href="c2.html" style="color:#ffffff">Array</a>
+<br><br>
+ <a href="c3.html" style="color:#ffffff">Function</a>
+<br><br>
+ <a href="c4.html" style="color:#ffffff">String</a>
+<br><br>
+ <a href="c5.html" style="color:#ffffff">Storage Classes</a>
+<br><br>
+ <a href="c6.html" style="color:#ffffff">Recursion</a>
+<br><br>
+</div>
+</td>
+
+
+<td style="width:60%;border:4px dotted #3c3E94;background-color:#ffffff" rowspan=2>
+
+<div id="center">
+<p>Storage Classes are associated with variables for describing the features of any variable or function in the C program. 
+These storage classes deal with features such as scope, lifetime and visibility which helps programmers to define a particular variable during the program's runtime. 
+These storage classes are preceded by the data type which they had to modify.
+<br><br>
+There are four storage classes types in C:
+<br><br>
+* auto<br>
+* register<br>
+* static<br>
+* extern<br>
+<br><br>
+<h2><u>auto</u></h2>
+auto comes by default with all local variables as its storage class. The keyword auto is used to define this storage class explicitly
+<br><br>
+<b>Syntax :</b>
+<br><br>
+int roll; // contains auto by default
+<br><br>
+<i>is the same as:</i>
+<br><br>
+auto int roll;    // in addition, we can use auto keyword
+<br><br>
+The above example has a variable name roll with auto as a storage class. This storage class can only be implemented with the local variables.
+<br><br>
+
+<h2><u>register</u></h2>
+This storage class is implemented for classifying local variables whose value needs to be saved in a register in place of RAM (Random Access Memory). 
+This is implemented when you want your variable the maximum size equivalent to the size of the register. It uses the keyword register.
+<br><br>
+
+<b>Syntax :</b>
+<br><br>
+register int  counter;
+<br><br>
+Register variables are used when implementing looping in counter variables to make program execution fast. 
+Register variables work faster than variables stored in RAM (primary memory).
+
+<br><br>
+<b>Example :</b>
+<br><br>
+for(register int counter=0; counter<=9; counter++)<br>
+{<br>
+// loop body<br>
+}<br>
+<br>
+<h2><u>static</u></h2>
+This storage class uses static variables that are used popularly for writing programs in C language. 
+Static variables preserve the value of a variable even when the scope limit exceeds. 
+Static storage class has its scope local to the function in which it is defined.
+<br><br>
+On the other hand, global static variables can be accessed in any part of your program. 
+The default value assigned is '0' by the C compiler. The keyword used to define this storage class is static.
+
+<br><br>
+<b>Example :</b>
+<br><br>
+static int var = 6;
+<br><br>
+
+<h2><u>extern</u></h2>
+The extern storage class is used to feature a variable to be used from within different blocks of the same program. Mainly, a value is set to that variable which is in a different block or function and can be overwritten or altered from within another block as well. 
+Hence it can be said that an extern variable is a global variable which is assigned with a value that can be accessed and used within the entire program.
+Moreover, a global variable can be explicitly made an extern variable by implementing the keyword 'extern' preceded the variable name.
+<br><br>
+<b>Example :</b>
+<br><br>
+<pre><big>#include <stdio.h>
+
+int val;
+extern void funcExtern();
+ 
+main() 
+{
+   val = 10;
+   funcExtern();
+}</big>
+</pre>
+
+</p>
+</div>
+</td>
+
+
+<td style="width:20%;background-color:pink"> 
+
+<div id="right" style="background-color:pink;height:100%">
+<br><br>
+<img src="pictures/c.gif" align=right height=60% width=100%>
+<div style="width:100%;height:36px;float:left"></div>
+<pre>
+
+
+</pre>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Courses</b></p><br>
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+<div id="beside" align=center style="background-color:#3c3E94;">
+	<br><a href="htt.html" style="color:#ffffff">HTML</a><br><br>
+	<a href="csswb.html" style="color:#ffffff">CSS</a><br><br>
+	<a href="c.html" style="color:#ffffff">C Language</a><br><br>
+	<a href="cpp.html" style="color:#ffffff">C++ Language</a><br><br>
+	<a href="js.html" style="color:#ffffff">Javascript</a><br><br>
+	<a href="php.html" style="color:#ffffff">PHP</a><br><br>
+
+</div>
+
+</div>
+<br>
+</td></tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tfoot style="background-color:#3c3E94;color:#ffffff">
+<td>Email :- prakritibhagwat@gmail.com <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		 akpk1804@gmail.com</td>
+<td style="border:3px dotted #ffffff"><marquee behavior="alternate" style="font-family:Viner Hand ITC"><big>Thank You!&nbsp;&nbsp;  Keep Learning...!</big></marquee></td>
+<td >Author :- Miss. Prakriti Naval Bhagwat</td>
+</tfoot>
+</table>
+
+
+</body></html>
+

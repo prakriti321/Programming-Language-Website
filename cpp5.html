@@ -1,0 +1,255 @@
+<html>
+<head>
+</head>
+
+<style>
+
+a:link{text-decoration:none;
+color:#ffffff}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+
+#aside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+a.#ffffff:link {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:active {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:visited {
+text-decoration:none;
+color:#ffffff;
+}
+
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#bg {
+width:21%;
+height:1px;
+float:left}
+
+#container {
+width:70%;
+height:7%;
+float:left;
+}
+
+#container ul{
+list-style:none;
+font-family:Georgia;
+}
+
+#container ul li{
+background-color:3c3E94;
+width:165px;
+border:1px solid white;
+height:40px;
+line-height:45px;
+text-align:center;
+float:left;
+color:white;
+font-size:16px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:#388222;
+}
+
+#container ul ul{
+display:none;
+}
+
+
+#container ul li:hover > ul{
+display:block;
+}
+
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+}
+
+p:  {
+}
+
+#topic {
+width:100%;
+background-color:3c3E94;
+height:45px;
+text-align:center;
+float:left;
+color:#ffffff;
+font-family:Lucida Calligraphy;
+}
+
+</style>
+<body bgcolor=pink>
+<div style="width:100%;height:8%">
+<h1 align=center style="background-color:#3c3E94;font-size:55;font-family:Colonna MT;word-spacing:6;color:pink">All About Computer Languages</h1><br>
+</div>
+<div id="bg">
+</div>
+<div id="container">
+<ul>
+<li><a href="homepage.html" style="color:#ffffff">Home</a></li>
+<li>Web Designing
+	<ul>
+	<li><a href="htt.html" style="color:#ffffff">HTML</a></li>
+	<li><a href="csswb.html" style="color:#ffffff">CSS</a></li>
+	</ul>
+</li>
+<li>Programming
+	<ul>
+	<li><a href="c.html" style="color:#ffffff">C Language</a></li>
+	<li><a href="cpp.html" style="color:#ffffff">C++ Language</a></li>
+	</ul>
+</li>
+<li>Clientside Scripting
+	<ul>
+	<li><a href="js.html" style="color:#ffffff">Javascript</a></li>
+	</ul>
+</li>
+<li>Serverside Scripting
+	<ul>
+	<li><a href="php.html" style="color:#ffffff">PHP</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+<div id="bg">
+</div>
+<div id="topic">
+<h1>Operator Overloading</h1>
+</div>
+
+
+<table border=1 cellpadding=0 cellspacing=0>
+
+<tr>
+<td style="width:20%;background-color:pink;height:20%"><br>
+<img src="pictures/cpp.png" height=55% width=100%>
+<br><br><br>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Study Topics</b></p><br>
+
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="aside" align=center style="background-color:#3c3E94;">
+ <br><a href="cpp1.html" style="color:#ffffff">Classes and Objects</a>
+<br><br>
+ <a href="cpp2.html" style="color:#ffffff">Inheritance</a>
+<br><br>
+ <a href="cpp3.html" style="color:#ffffff">Constructor</a>
+<br><br>
+ <a href="cpp4.html" style="color:#ffffff">File Handling</a>
+<br><br>
+ <a href="cpp5.html" style="color:#ffffff">Operator Overloading</a>
+<br><br>
+ <a href="cpp6.html" style="color:#ffffff">Templates</a>
+<br><br>
+</div>
+</td>
+
+
+<td style="width:60%;border:4px dotted #3c3E94;background-color:#ffffff" rowspan=2>
+
+<div id="center">
+<p>Operator overloading is a type of polymorphism in which a single operator is overloaded to give user defined meaning to it. Operator overloading provides a flexibility option for creating new definitions of C++ operators.
+There are some C++ operators which we can't overload.
+<br><br>
+<b>The lists of such operators are:</b>
+<br><br>
+Class member access operator (. (dot), .* (dot-asterisk))<br>
+Scope resolution operator (::)<br>
+Conditional Operator (?:)<br>
+Size Operator (sizeof)<br>
+<br><br>
+These are the lists of few excluded operators and are very few when compared to large sets of operators which can be used for the concept of operator overloading. An overloaded operator is used to perform an operation on the user-defined data type. Let us take an example of the addition operator (+) operator has been overloaded to perform addition on various variable types, like for integer, floating point, String (concatenation) etc.
+<br><br>
+<b>Syntax :</b><br><br>
+return type className :: operator op (arg_list)
+{
+ //Function body;
+}
+<br><br>
+<b>Example :</b>
+<br><br>
+<img src="New folder/cppcd5.png" border=2 height=110% width=80%>
+<br><br>
+<img src="New folder/cppop5.png" border=2 height=110% width=60%>
+
+</p>
+</div>
+</td>
+
+
+<td style="width:20%;background-color:pink"> 
+
+<div id="right" style="background-color:pink;height:100%">
+<br><br>
+<img src="pictures/ERLA.gif" align=right height=60% width=100%>
+<div style="width:100%;height:36px;float:left"></div>
+<pre>
+
+
+</pre>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Courses</b></p><br>
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+<div id="beside" align=center style="background-color:#3c3E94;">
+	<br><a href="htt.html" style="color:#ffffff">HTML</a><br><br>
+	<a href="csswb.html" style="color:#ffffff">CSS</a><br><br>
+	<a href="c.html" style="color:#ffffff">C Language</a><br><br>
+	<a href="cpp.html" style="color:#ffffff">C++ Language</a><br><br>
+	<a href="js.html" style="color:#ffffff">Javascript</a><br><br>
+	<a href="php.html" style="color:#ffffff">PHP</a><br><br>
+
+</div>
+
+</div>
+<br>
+</td></tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tfoot style="background-color:#3c3E94;color:#ffffff">
+<td>Email :- prakritibhagwat@gmail.com <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		 akpk1804@gmail.com</td>
+<td style="border:3px dotted #ffffff"><marquee behavior="alternate" style="font-family:Viner Hand ITC"><big>Thank You!&nbsp;&nbsp;  Keep Learning...!</big></marquee></td>
+<td >Author :- Miss. Prakriti Naval Bhagwat</td>
+</tfoot>
+</table>
+
+
+</body></html>
+

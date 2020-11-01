@@ -1,0 +1,411 @@
+<html>
+<head>
+
+
+</head>
+
+<style>
+
+a:link{text-decoration:none;
+color:#ffffff}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+
+#aside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+a.#ffffff:link {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:active {
+text-decoration:none;
+color:#ffffff;
+}
+a.#ffffff:visited {
+text-decoration:none;
+color:#ffffff;
+}
+
+
+*{
+margin:0px;
+padding:0px;
+}
+
+#bg {
+width:21%;
+height:1px;
+float:left}
+
+#container {
+width:70%;
+height:7%;
+float:left;
+}
+
+#container ul{
+list-style:none;
+font-family:Georgia;
+}
+
+#container ul li{
+background-color:3c3E94;
+width:165px;
+border:1px solid white;
+height:40px;
+line-height:45px;
+text-align:center;
+float:left;
+color:white;
+font-size:16px;
+position:relative;
+}
+
+#container ul li:hover{
+background-color:#388222;
+}
+
+#container ul ul{
+display:none;
+}
+
+
+#container ul li:hover > ul{
+display:block;
+}
+
+#container ul ul ul{
+margin-left:150px;
+top:0px;
+position:absolute;
+}
+
+#topic {
+width:100%;
+background-color:3c3E94;
+height:45px;
+text-align:center;
+float:left;
+color:#ffffff;
+font-family:Lucida Calligraphy;
+}
+/*
+#left {
+float:left;
+width:100%;
+height:100%;
+background-color:pink;
+}
+
+#right {
+width:100%;
+height:100%;
+background-color:pink;
+float:left;
+}
+
+#center {
+float:left;
+border:2px dotted #3c3E94;
+width:59%;
+height:100%;
+font-size:20px
+}
+
+#aside {
+background-color:#3c3E94;
+}
+
+#beside a:hover{
+text-decoration:none;
+text-align:center;
+background-color:black;
+color:#ffffff;
+}
+
+#beside {
+background-color:#3c3E94;
+width:60%;
+float:left
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+*/
+</style>
+<body bgcolor=pink>
+<div style="width:100%;height:8%">
+<h1 align=center style="background-color:#3c3E94;font-size:55;font-family:Colonna MT;word-spacing:6;color:pink">All About Computer Languages</h1><br>
+</div>
+<div id="bg">
+</div>
+<div id="container">
+<ul>
+<li><a href="homepage.html" style="color:#ffffff">Home</a></li>
+<li>Web Designing
+	<ul>
+	<li><a href="htt.html" style="color:#ffffff">HTML</a></li>
+	<li><a href="csswb.html" style="color:#ffffff">CSS</a></li>
+	</ul>
+</li>
+<li>Programming
+	<ul>
+	<li><a href="c.html" style="color:#ffffff">C Language</a></li>
+	<li><a href="cpp.html" style="color:#ffffff">C++ Language</a></li>
+	</ul>
+</li>
+<li>Clientside Scripting
+	<ul>
+	<li><a href="js.html" style="color:#ffffff">Javascript</a></li>
+	</ul>
+</li>
+<li>Serverside Scripting
+	<ul>
+	<li><a href="php.html" style="color:#ffffff">PHP</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+<div id="bg">
+</div>
+<div id="topic">
+<h1>String Object</h1>
+</div>
+
+
+<table border=1 cellpadding=0 cellspacing=0>
+
+<tr>
+<td style="width:20%;background-color:pink;height:20%">
+<img src="pictures/js.jpg" height=50% width=100%>
+<br><br><br>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Study Topics</b></p><br>
+
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="aside" align=center style="background-color:#3c3E94;">
+ <br><a href="js1.html" style="color:#ffffff">Math Object</a>
+<br><br>
+ <a href="js2.html" style="color:#ffffff">String Object</a>
+<br><br>
+ <a href="js3.html" style="color:#ffffff">Date Object</a>
+<br><br>
+ <a href="js4.html" style="color:#ffffff">Array Object</a>
+<br><br>
+ <a href="js5.html" style="color:#ffffff">Event Handlers</a>
+<br><br>
+ <a href="js6.html" style="color:#ffffff">Conditional Statements</a>
+<br><br>
+</div>
+</td>
+
+
+<td style="width:60%;border:4px dotted #3c3E94;background-color:#ffffff" rowspan=2>
+
+<div id="center">
+<p>The String object lets you work with a series of characters; it wraps Javascript's string primitive data type with a number of helper methods.
+As JavaScript automatically converts between string primitives and String objects, you can call any of the helper methods of the String object on a string primitive.
+<br>
+<b>Syntax :</b>
+<br><br>
+Use the following syntax to create a String object :
+<br>
+var val = new String(string);
+<br>
+The String parameter is a series of characters that has been properly encoded.
+<br><br>
+<h3><u>String Properties</u></h3>
+<br>
+Here is a list of the properties of String object and their description.<br>
+<img src="New folder/js2.png" border=2 height=80% width=60%>
+<br>
+In the following sections, we will have a few examples to demonstrate the usage of String properties.
+<br><br>
+<h3><u>String Methods</u></h3>
+<br>
+Here is a list of the methods available in String object along with their description.
+<br><pre><big>
+<u>Sr.No.</u>  <u>Method & Description</u>
+
+1	charAt()
+	Returns the character at the specified index.
+
+2	charCodeAt()
+	Returns a number indicating the Unicode value of the character at the given index.
+
+3	concat()
+	Combines the text of two strings and returns a new string.
+
+4	indexOf()
+	Returns the index within the calling String object of the first occurrence 
+	of the specified value, or -1 if not found.
+
+5	lastIndexOf()
+	Returns the index within the calling String object of the last occurrence
+	of the specified value,or -1 if not found.
+
+6	localeCompare()
+	Returns a number indicating whether a reference string comes before or
+	after or is the same as the given string in sort order.
+
+7	match()
+	Used to match a regular expression against a string.
+
+8	replace()
+	Used to find a match between a regular expression and a string, and to replace 
+	the matched substring with a new substring.
+
+9	search()
+	Executes the search for a match between a regular expression and a specified string.
+
+10	slice()
+	Extracts a section of a string and returns a new string.
+
+11	split()
+	Splits a String object into an array of strings by separating the
+	string into substrings.
+
+12	substr()
+	Returns the characters in a string beginning at the specified location 
+	through the specified number
+	of characters.
+
+13	substring()
+	Returns the characters in a string between two indexes into the string.
+
+14	toLocaleLowerCase()
+	The characters within a string are converted to lower case while 
+	respecting the current locale.
+
+15	toLocaleUpperCase()
+	The characters within a string are converted to upper case while 
+	respecting the current locale.
+
+16	toLowerCase()
+	Returns the calling string value converted to lower case.
+
+17	toString()
+	Returns a string representing the specified object.
+
+18	toUpperCase()
+	Returns the calling string value converted to uppercase.
+
+19	valueOf()
+	Returns the primitive value of the specified object.
+</big></pre><br>
+<h3><u>String HTML Wrappers</u></h3>
+<br><br>
+Here is a list of the methods that return a copy of the string wrapped inside an appropriate HTML tag.
+<br><pre><big>
+<b><u>Sr.No.</u>  <u>Method & Description</u></b>
+1	anchor()
+	Creates an HTML anchor that is used as a hypertext target.
+
+2	big()
+	Creates a string to be displayed in a big font as if it were in a &lt;big&gt; tag.
+
+3	blink()
+	Creates a string to blink as if it were in a <blink> tag.
+
+4	bold()
+	Creates a string to be displayed as bold as if it were in a &lt;b&gt; tag.
+
+5	fixed()
+	Causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag
+
+6	fontcolor()
+	Causes a string to be displayed in the specified color as if it were in a 
+	&lt;font color="color"&gt; tag.
+
+7	fontsize()
+	Causes a string to be displayed in the specified font size as if it were 
+	in a &lt;font size="size"&gt; tag.
+
+8	italics()
+	Causes a string to be italic, as if it were in an &lt;i&gt; tag.
+
+9	link()
+	Creates an HTML hypertext link that requests another URL.
+
+10	small()
+	Causes a string to be displayed in a small font, as if it were in a &lt;small&gt; tag.
+
+11	strike()
+	Causes a string to be displayed as struck-out text, as if it were in a &lt;strike&gt; tag.
+
+12	sub()
+	Causes a string to be displayed as a subscript, as if it were in a &lt;sub&gt; tag
+
+13	sup()
+	Causes a string to be displayed as a superscript, as if it were in a &lt;sup&gt; tag
+</big></pre></p>
+</div>
+
+</td>
+
+
+<td style="width:20%;background-color:pink"> 
+
+<div id="right" style="background-color:pink;height:100%">
+<br>
+<img src="pictures/TUml.gif" align=right height=50% width=100%>
+<div style="width:100%;height:36px;float:left"></div>
+<pre>
+
+
+</pre>
+<p style="font-family:Colonna MT;font-size:30" align=center><b>Courses</b></p><br>
+<div style="float:left;width:20%">
+<pre>
+
+</pre>
+</div>
+
+<div id="beside" align=center style="background-color:#3c3E94;">
+	<br><a href="htt.html" style="color:#ffffff">HTML</a><br><br>
+	<a href="csswb.html" style="color:#ffffff">CSS</a><br><br>
+	<a href="c.html" style="color:#ffffff">C Language</a><br><br>
+	<a href="cpp.html" style="color:#ffffff">C++ Language</a><br><br>
+	<a href="js.html" style="color:#ffffff">Javascript</a><br><br>
+	<a href="php.html" style="color:#ffffff">PHP</a><br><br>
+
+</div>
+
+</div>
+<br>
+</td></tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tfoot style="background-color:#3c3E94;color:#ffffff">
+<td>Email :- prakritibhagwat@gmail.com <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		 akpk1804@gmail.com</td>
+<td style="border:3px dotted #ffffff"><marquee behavior="alternate" style="font-family:Viner Hand ITC"><big>Thank You!&nbsp;&nbsp;  Keep Learning...!</big></marquee></td>
+<td >Author :- Miss. Prakriti Naval Bhagwat</td>
+</tfoot>
+</table>
+
+</body></html>
